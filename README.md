@@ -96,25 +96,6 @@ Fine-grained hyperparameter tuning with live feedback — epochs, batch size, he
 - **Styling:** Custom CSS with glassmorphism, CSS custom properties, and micro-animations
 - **Deployment:** Firebase Hosting
 
-## Architecture
-
-```
-customTM/
-├── index.html                  → Single-page application shell & node-graph DOM
-├── style.css                   → Complete design system (glassmorphism, dark theme)
-├── src/
-│   ├── app.js                  → Main orchestrator (canvas, UI, training loop, session I/O)
-│   ├── TeachableMobileNet.js   → Transfer learning engine (backbone + classification head)
-│   ├── MafabiMobileNet.js      → MobileNet v1 loader & feature extractor configuration
-│   ├── Webcam.js               → WebRTC camera pipeline (aspect-ratio crop, RGB normalization)
-│   ├── canvasUtils.js          → HTML5 Canvas rendering utilities
-│   ├── tfUtils.js              → TensorFlow.js tensor helpers & cleanup
-│   └── zipUtils.js             → ZIP packaging for model & dataset export
-└── assets/
-    ├── customTM.svg            → Application icon
-    └── favicon.ico             → Browser favicon
-```
-
 ## Download & Installation
 
 CustomTM is deployed as a web application. No installation required.
