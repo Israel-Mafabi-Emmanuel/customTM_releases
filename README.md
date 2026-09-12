@@ -38,7 +38,7 @@ Traditional computer vision workflows force you into fragmented toolchains — J
 
 ### MobileNet Transfer Learning Engine
 
-Leverages a pre-trained MobileNet v1 backbone truncated at `conv_pw_13_relu` as a high-dimensional feature extractor. User samples are converted to 1024-D embedding vectors and cached in memory, so training a custom classification head takes seconds — not hours.
+Leverages a pre-trained MobileNet v1 backbone. User samples are converted to 1024-D embedding vectors and cached in memory, so training a custom classification head takes seconds — not hours.
 
 - **Embedding Cache Architecture:** Stores compact activation vectors instead of heavy raw images, enabling massive sample counts with minimal memory.
 - **Fused Model Export:** The trained classification head is merged with the base feature extractor into a single unified sequential model for direct deployment.
